@@ -1,6 +1,6 @@
 #pragma once
 #include "Node.hh"
-#include "Book.hh"
+#include "Menu.hh"
 
 class Stack
 {
@@ -11,7 +11,7 @@ public:
   ~Stack();
   Node* GetTop() const;// Peek, toma el top/head y lo muetras, pero no lo borra
   void Pop(); //elimina lo que hay en head, osea lo atiende.
-  void Push(Book*& book);
+  void Push(Menu*& menu);
   bool IsEmpty() const;
   void Print();
 };

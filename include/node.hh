@@ -1,14 +1,14 @@
 #pragma once
-#include "Book.hh"
+#include "Menu.hh"
 
 class Node
 {
 private:
-  Book* book{nullptr};
+  Menu* menu{nullptr};
 public:
   Node* next{nullptr};
-  Node(Book*& book);
+  Node(Menu*& menu);
   ~Node();
 
-  Book* GetBook() const;
+  Menu* GetMenu() const;
 };

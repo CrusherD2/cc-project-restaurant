@@ -1,19 +1,19 @@
 #include<iostream>
-#include "Book.hh"
+#include "Menu.hh"
 #include "Stack.hh"
 
 int main()
 {
-  Book* book1{new Book("book1", "cosme fulanito", 300)};
-  Book* book2{new Book("book2", "radom", 500)};
-  Book* book3{new Book("progra c++", "Jesus C", 1000)};
-  Book* book4{new Book("Cocinando palomas", "aninimo", 100)};
+  Menu* menu1{new Menu("Bacon Burger", "Burger with bacon and fries", 110)};
+  Menu* menu2{new Menu("Mix Burger", "Burger with bacon and guacamole with fries", 140)};
+  Menu* menu3{new Menu("Big Burger", "Burger with bacon, mushroom, onion and fries", 130)};
+  Menu* menu4{new Menu("Double Western Bacon", "Burger with fried onions, BBQ and bacon with fries", 125)};
 
   Stack* stack{new Stack()};
-  stack->Push(book1);
-  stack->Push(book2);
-  stack->Push(book3);
-  stack->Push(book4);
+  stack->Push(menu1);
+  stack->Push(menu2);
+  stack->Push(menu3);
+  stack->Push(menu4);
   stack->Print();
 
   stack->Pop();
@@ -21,9 +21,7 @@ int main()
   //stack->Pop();
   //stack->Pop();
 
-  stack->Print();
-
-  std::cout << "Book top name: " << stack->GetTop()->GetBook()->GetName() << std::endl;
+  std::cout << "Menu top name: " << stack->GetTop()->GetMenu()->GetName() << std::endl;
 
   std::cin.get();
 
