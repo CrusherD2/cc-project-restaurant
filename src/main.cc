@@ -4,10 +4,10 @@
 
 int main()
 {
-  Menu* menu1{new Menu("Bacon Burger", "Burger with bacon and fries", 110)};
-  Menu* menu2{new Menu("Mix Burger", "Burger with bacon and guacamole with fries", 140)};
-  Menu* menu3{new Menu("Big Burger", "Burger with bacon, mushroom, onion and fries", 130)};
-  Menu* menu4{new Menu("Double Western Bacon", "Burger with fried onions, BBQ and bacon with fries", 125)};
+  Menu* menu1{new Menu("Stainless steel", "knifes", 5)};
+  Menu* menu2{new Menu("Porcelain", "Spoon", 20)};
+  Menu* menu3{new Menu("Aluminium", "Fork", 15)};
+  Menu* menu4{new Menu("Glass", "Wine Glasses", 10)};
 
   Stack* stack{new Stack()};
   stack->Push(menu1);
